@@ -312,7 +312,7 @@
         }
       });
     </script>
-    <script>
+ <script>
 (function(apiKey){
     (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
     v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
@@ -324,8 +324,8 @@
         // Please use Strings, Numbers, or Bools for value types.
         pendo.initialize({
             visitor: {
-                id:              '1'   // Required if user is logged in
-                email:        'email@gmail.com'
+                id:              'VISITOR-UNIQUE-ID'   // Required if user is logged in
+                // email:        // Optional
                 // role:         // Optional
 
                 // You can add any additional visitor level key-values here,
@@ -333,7 +333,7 @@
             },
 
             account: {
-                id:           'Account1' // Highly recommended
+                id:           'ACCOUNT-UNIQUE-ID' // Highly recommended
                 // name:         // Optional
                 // planLevel:    // Optional
                 // planPrice:    // Optional
